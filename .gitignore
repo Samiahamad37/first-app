@@ -1,0 +1,42 @@
+# ================================
+# Flutter / Dart
+# ================================
+.dart_tool/
+.packages
+.pub-cache/
+build/
+coverage/
+
+# ================================
+# Android
+# ================================
+android/.gradle/
+android/app/build/
+
+# ================================
+# iOS
+# ================================
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/flutter_export_environment.sh
+
+# ================================
+# Windows
+# ================================
+windows/flutter/ephemeral/
+windows/flutter/generated/
+
+# ================================
+# IDEs
+# ================================
+.idea/
+*.iml
+.vscode/
+
+# ================================
+# OS
+# ================================
+.DS_Store
+Thumbs.db
