@@ -1,5 +1,5 @@
 import 'package:first_app/home.dart';
-import 'package:first_app/text.dart';
+import 'package:first_app/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
