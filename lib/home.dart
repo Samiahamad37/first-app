@@ -3,23 +3,26 @@ import 'package:flutter/material.dart';
 class Home extends StatefulWidget {
   const Home({super.key});
 
-
-
   @override
   State<Home> createState() => _HomeState();
 }
-
 
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 235, 238, 238), // WhatsApp green
+        backgroundColor: const Color.fromARGB(
+          255,
+          235,
+          238,
+          238,
+        ), // WhatsApp green
         title: const Text(
           'WhatsApp',
           style: TextStyle(
-            fontWeight: FontWeight.bold,color: Color.fromARGB(255, 8, 141, 63)
+            fontWeight: FontWeight.bold,
+            color: Color.fromARGB(255, 8, 141, 63),
           ),
         ),
         actions: [
@@ -27,10 +30,7 @@ class _HomeState extends State<Home> {
             icon: const Icon(Icons.camera_alt_outlined),
             onPressed: () {},
           ),
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {},
-          ),
+          IconButton(icon: const Icon(Icons.search), onPressed: () {}),
           PopupMenuButton<String>(
             onSelected: (value) {},
             itemBuilder: (context) => [
@@ -41,13 +41,39 @@ class _HomeState extends State<Home> {
         ],
       ),
       body: const Center(
-        child: Text('WELCOME'),
+        child: Text(
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Color.fromARGB(255, 8, 141, 63),
+          ),
+          'WELCOME TO WHATSAPP',
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: const Color.fromARGB(255, 235, 238, 238),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+              icon: const Icon(Icons.chat_bubble_outline),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: const Icon(Icons.call),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: const Icon(Icons.camera_alt_outlined),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: const Icon(Icons.settings),
+              onPressed: () {},
+            ),
+          ],
+        ),
       ),
     );
   }
 }
-
-
-
-
-
