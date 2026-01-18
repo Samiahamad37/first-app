@@ -80,18 +80,20 @@ class _HomeState extends State<Home> {
               icon: const Icon(Icons.chat_bubble_outline),
               onPressed: () {},
             ),
+                        IconButton(
+              icon: const Icon(Icons.update),
+              onPressed: () {},
+            ),
+            
+            IconButton(
+              icon: const Icon(Icons.group),
+              onPressed: () {},
+            ),
             IconButton(
               icon: const Icon(Icons.call),
               onPressed: () {},
             ),
-            IconButton(
-              icon: const Icon(Icons.contacts_rounded),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(Icons.update_disabled_rounded),
-              onPressed: () {},
-            ),
+
           ],
         ),
       ),
