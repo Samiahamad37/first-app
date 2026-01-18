@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
           'WhatsApp',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 8, 141, 63),
+            color: Color.fromARGB(255, 17, 221, 17),
           ),
         ),
         actions: [
@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 8, 141, 63),
+            color: Color.fromARGB(255, 17, 221, 17),
           ),
           'WELCOME TO WHATSAPP',
         ),
