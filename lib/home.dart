@@ -26,8 +26,17 @@ class _HomeState extends State<Home> {
           IconButton(
             icon: const Icon(Icons.camera_alt_outlined),
             onPressed: () {},
+            ),
+            PopupMenuButton<String>(
+            onSelected: (value) {},
+            itemBuilder: (context) => const [
+              PopupMenuItem(value: 'new_group', child: Text('New group')),
+              PopupMenuItem(value: 'settings', child: Text('Settings')),
             
-          ),
+            ],
+          
+          
+          ),  
         ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(55),
@@ -76,11 +85,11 @@ class _HomeState extends State<Home> {
               onPressed: () {},
             ),
             IconButton(
-              icon: const Icon(Icons.camera_alt_outlined),
+              icon: const Icon(Icons.contacts_rounded),
               onPressed: () {},
             ),
             IconButton(
-              icon: const Icon(Icons.settings),
+              icon: const Icon(Icons.update_disabled_rounded),
               onPressed: () {},
             ),
           ],
