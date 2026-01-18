@@ -12,11 +12,8 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(
-          255,
-          235,
-          238,
-          238,
+        backgroundColor: const Color.fromARGB(255,235,238,
+238,
         ), // WhatsApp green
         title: const Text(
           'WhatsApp',
@@ -29,17 +26,32 @@ class _HomeState extends State<Home> {
           IconButton(
             icon: const Icon(Icons.camera_alt_outlined),
             onPressed: () {},
-          ),
-          IconButton(icon: const Icon(Icons.search), onPressed: () {}),
-          PopupMenuButton<String>(
-            onSelected: (value) {},
-            itemBuilder: (context) => [
-              const PopupMenuItem(value: 'new_group', child: Text('New group')),
-              const PopupMenuItem(value: 'settings', child: Text('Settings')),
-            ],
+            
           ),
         ],
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(55),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 45,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(25),
+              ),
+              child: const TextField(
+                decoration: InputDecoration(
+                  hintText: "Search...",
+                  prefixIcon: Icon(Icons.search),
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.symmetric(vertical: 10),
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
+
       body: const Center(
         child: Text(
           style: TextStyle(
