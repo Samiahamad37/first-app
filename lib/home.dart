@@ -1,3 +1,4 @@
+import 'package:first_app/chat.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -7,7 +8,12 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
+
+
+
 class _HomeState extends State<Home> {
+  late TabController _tabController;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
