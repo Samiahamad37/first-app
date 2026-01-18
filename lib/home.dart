@@ -71,6 +71,21 @@ class _HomeState extends State<Home> {
           'WELCOME TO WHATSAPP',
         ),
       ),
+      floatingActionButton: _tabController.index == 0
+    ? FloatingActionButton(
+        backgroundColor: const Color(0xFF25D366),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const NewChatScreen(),
+            ),
+          );
+        },
+        child: const Icon(Icons.chat),
+      )
+    : null,
+
       bottomNavigationBar: BottomAppBar(
         color: const Color.fromARGB(255, 235, 238, 238),
         child: Row(
