@@ -6,13 +6,14 @@ class Home extends StatefulWidget {
 
   @override
   State<Home> createState() => _HomeState();
+  
 }
 
 
 
 
 class _HomeState extends State<Home> {
-  late TabController _tabController;
+
 
   @override
   Widget build(BuildContext context) {
@@ -77,20 +78,17 @@ class _HomeState extends State<Home> {
           'WELCOME TO WHATSAPP',
         ),
       ),
-      floatingActionButton: _tabController.index == 0
-    ? FloatingActionButton(
-        backgroundColor: const Color(0xFF25D366),
+      floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-              builder: (context) => const NewChatScreen(),
-            ),
+            MaterialPageRoute(builder: (context) => const NewChatScreen()),
           );
         },
+        backgroundColor: const Color(0xFF25D366),
         child: const Icon(Icons.chat),
-      )
-    : null,
+      ),
+    
 
       bottomNavigationBar: BottomAppBar(
         color: const Color.fromARGB(255, 235, 238, 238),
