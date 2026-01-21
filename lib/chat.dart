@@ -6,7 +6,6 @@ class NewChatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final contacts = [
-      "Bunny ❤️",
       "Mom",
       "Dad",
       "CSM Group",
