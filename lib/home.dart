@@ -97,7 +97,12 @@ class _HomeState extends State<Home> {
           children: [
             IconButton(
               icon: const Icon(Icons.chat_bubble_outline),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const NewChatScreen()),
+                );
+              },
             ),
                         IconButton(
               icon: const Icon(Icons.update),
@@ -106,7 +111,12 @@ class _HomeState extends State<Home> {
             
             IconButton(
               icon: const Icon(Icons.group),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const NewChatScreen()),
+                );
+              },
             ),
             IconButton(
               icon: const Icon(Icons.call),
